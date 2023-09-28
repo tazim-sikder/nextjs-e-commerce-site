@@ -38,7 +38,7 @@ const ProductsData = ({ item }: ItemProps) => {
           </div>
         </Link>
         <div className="border-[1px] border-slate-300 border-t-0 px-2 py-4 flex flex-col gap-y-2 bg-white rounded-b-lg">
-          <p>{item?.title}</p>
+          <p className="capitalize">{item?.title}</p>
           <div className="flex items-center justify-between">
             <div className="border-[1px] border-orange-600 py-1 px-4 rounded-full text-xs">
               <p>{calculatePercentage(item?.price, item?.oldPrice)}% off</p>
